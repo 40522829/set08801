@@ -97,10 +97,8 @@ window.onload = function() {
                 // Identify which container side we are using on each iteration
                 if (current_side == "left") {
                     current_side = "right";
-                    console.log(current_side);
                 } else {
                     current_side = "left";
-                    console.log(current_side);
                 }
 
                 // Add text on the points and player elements

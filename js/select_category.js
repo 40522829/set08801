@@ -5,6 +5,9 @@ const btnCat2 = document.querySelector('#category2');
 const categoryMap = '{"British TV" : "britishTV", "Geography" : "geography", "History" : "history", "Science" : "science", "Sports" : "sports", "Technology" : "technology"}';
 const categoryJson = JSON.parse(categoryMap);
 
+sessionStorage.setItem("categoryOne","");
+sessionStorage.setItem("categoryTwo","");
+
 function selectCategory(cat) {
     addCategory(cat);    
     setIndex();
@@ -51,7 +54,6 @@ function checkCategories(e) {
 }
 
 function useCategories() {
-    //sessionStorage.setItem
     sessionStorage.setItem("categoryOne", categoryJson[selectedCat[0]]);
     sessionStorage.setItem("categoryTwo", categoryJson[selectedCat[1]]);    
     console.log("Selected categories set!");

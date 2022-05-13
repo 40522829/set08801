@@ -91,11 +91,6 @@ function initialiseDB(e) {
         async function getBritishTvData() {
             const response = await fetch("./data/britishTV.json");
             const data = await response.json();
-            //fetch('./data/britishTV.json')
-            //.then(response => response.json())
-            //.then(data => {  
-                //console.log(Object.values(data).length);
-                //console.log(data.britishTV.length);
                 for(let i=0; i<data.britishTV.length; i++) {
                     let dbRequest = request.result;
                     let transaction = dbRequest.transaction("britishTV", "readwrite");
@@ -124,7 +119,71 @@ function initialiseDB(e) {
                 let addCatQuestion = transaction.objectStore("geography").add(catQuestion);
             };
         };
-        getGeographyData();
+        getGeographyData();        
+
+        // Initialise history store
+        async function getHistoryData() {
+            const response = await fetch("./data/history.json");
+            const data = await response.json();
+            for(let i=0; i<data.history.length; i++) {
+                let dbRequest = request.result;
+                let transaction = dbRequest.transaction("history", "readwrite");
+                let catQuestion = {question: data.history[i].question, 
+                    answer1: data.history[i].answer1[0], 
+                    answer2: data.history[i].answer2[0], 
+                    answer3: data.history[i].answer3[0]};
+                let addCatQuestion = transaction.objectStore("history").add(catQuestion);
+            };
+        };
+        getHistoryData();
+        
+        // Initialise science store
+        async function getScienceData() {
+            const response = await fetch("./data/science.json");
+            const data = await response.json();
+            for(let i=0; i<data.science.length; i++) {
+                let dbRequest = request.result;
+                let transaction = dbRequest.transaction("science", "readwrite");
+                let catQuestion = {question: data.science[i].question, 
+                    answer1: data.science[i].answer1[0], 
+                    answer2: data.science[i].answer2[0], 
+                    answer3: data.science[i].answer3[0]};
+                let addCatQuestion = transaction.objectStore("science").add(catQuestion);
+            };
+        };
+        getScienceData();
+        
+        // Initialise sports store
+        async function getSportsData() {
+            const response = await fetch("./data/sports.json");
+            const data = await response.json();
+            for(let i=0; i<data.sports.length; i++) {
+                let dbRequest = request.result;
+                let transaction = dbRequest.transaction("sports", "readwrite");
+                let catQuestion = {question: data.sports[i].question, 
+                    answer1: data.sports[i].answer1[0], 
+                    answer2: data.sports[i].answer2[0], 
+                    answer3: data.sports[i].answer3[0]};
+                let addCatQuestion = transaction.objectStore("sports").add(catQuestion);
+            };
+        };
+        getSportsData();
+
+        // Initialise technology store
+        async function getTechnologyData() {
+            const response = await fetch("./data/technology.json");
+            const data = await response.json();
+            for(let i=0; i<data.technology.length; i++) {
+                let dbRequest = request.result;
+                let transaction = dbRequest.transaction("technology", "readwrite");
+                let catQuestion = {question: data.technology[i].question, 
+                    answer1: data.technology[i].answer1[0], 
+                    answer2: data.technology[i].answer2[0], 
+                    answer3: data.technology[i].answer3[0]};
+                let addCatQuestion = transaction.objectStore("technology").add(catQuestion);
+            };
+        };
+        getTechnologyData();
         
 /*
         // Initialise geography store
