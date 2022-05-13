@@ -1,0 +1,40 @@
+{
+    "technology": [
+        {
+            "question": "q1 bla bla bla?",
+            "answer1": ["technology - q11","0"],
+            "answer2": ["technology - q12","0"],
+            "answer3": ["technology - q13","1"]
+        },
+        {
+            "question": "q2 bla bla bla?",
+            "answer1": ["technology - q21","0"],
+            "answer2": ["technology - q22","1"],
+            "answer3": ["technology - q23","0"]
+        },
+        {
+            "question": "q3 bla bla bla?",
+            "answer1": ["technology - q31","1"],
+            "answer2": ["technology - q32","0"],
+            "answer3": ["technology - q33","0"]
+        },
+        {
+            "question": "q4 bla bla bla?",
+            "answer1": ["technology - q41","1"],
+            "answer2": ["technology - q42","0"],
+            "answer3": ["technology - q43","0"]
+        },
+        {
+            "question": "q5 bla bla bla?",
+            "answer1": ["technology - q51","1"],
+            "answer2": ["technology - q52","0"],
+            "answer3": ["technology - q53","0"]
+        },
+        {
+            "question": "q6 bla bla bla?",
+            "answer1": ["technology - q61","0"],
+            "answer2": ["technology - q62","1"],
+            "answer3": ["technology - q63","0"]
+        }
+    ]
+}

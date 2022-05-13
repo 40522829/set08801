@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+* { font-family: 'Mali', cursive; font-size: 16px; font-weight: 300; color: #555; margin: 0; padding: 0; }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 2em; /* 40px/16=2.5em */;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.disabled{
+    pointer-events: none; /*This makes it not clickable*/
+    opacity:0.6;          /*This grays it out to look disabled*/
+}
+
+.panel {
+    padding: 0 18px 10px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    padding: 14px 18px 10px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    padding: 14px 18px 10px;
+}
+
+.qHeader {
+    font-size: 30px; /* 40px/16=2.5em */;
+    font-weight: bold;
+padding: 10px 18px;
+}
+
+.question {
+    font-size: 1.875em; /* 30px/16=1.875em */;
+    padding: 10px 18px;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    border-radius: 16px;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: rgb(66, 149, 251);
+}
+
+/* When clicked on, add a background color */
+ul li.checked {
+    background: rgb(0, 199, 50);
+    color: #fff;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}

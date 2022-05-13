@@ -1,0 +1,12 @@
+body {
+    background-color: #e7ecf0;
+}
+
+.game_frame {
+    width: "500";
+    height: "1000";
+    top: 50%;
+    left: 30%;
+    text-align: center;
+    border: none; 
+}

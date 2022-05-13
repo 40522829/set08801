@@ -1,0 +1,108 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+    background-color: #e7ecf0;
+}
+
+.column {
+float: left;
+width: 33.33%;
+padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+position: relative;
+width: 30%;
+max-width: 400px;
+}
+
+/* Make the image responsive */
+.image {
+display: block;
+width: 100%;
+height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+opacity: -1;
+transition: .3s ease;
+background-color: #28d12d;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container:hover .overlay {
+opacity: 10;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+color: white;
+font-size: 120px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.play_btn_container {
+    background-color: #e7ecf0;
+    text-align: center;
+    border: none;
+
+}
+
+.play_button{    
+    background-color: #4CAF50; /* Green */
+    border: none;
+    margin-top: 10px;
+    width: 89.5%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;    
+    border-radius: 16px;
+    align-items: center;
+}
+
+.chosen_categories{
+    margin-left: 40px;
+    font-size: 24px;
+}
+
+.categories{    
+    background-color: #9d2df9;
+    border: none;
+    margin-top: 10px;
+    width: 25%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;    
+    border-radius: 16px;
+    align-items: center;
+}

@@ -1,0 +1,40 @@
+{
+    "science": [
+        {
+            "question": "q1 bla bla bla?",
+            "answer1": ["science - q11","0"],
+            "answer2": ["science - q12","0"],
+            "answer3": ["science - q13","1"]
+        },
+        {
+            "question": "q2 bla bla bla?",
+            "answer1": ["science - q21","0"],
+            "answer2": ["science - q22","1"],
+            "answer3": ["science - q23","0"]
+        },
+        {
+            "question": "q3 bla bla bla?",
+            "answer1": ["science - q31","1"],
+            "answer2": ["science - q32","0"],
+            "answer3": ["science - q33","0"]
+        },
+        {
+            "question": "q4 bla bla bla?",
+            "answer1": ["science - q41","1"],
+            "answer2": ["science - q42","0"],
+            "answer3": ["science - q43","0"]
+        },
+        {
+            "question": "q5 bla bla bla?",
+            "answer1": ["science - q51","1"],
+            "answer2": ["science - q52","0"],
+            "answer3": ["science - q53","0"]
+        },
+        {
+            "question": "q6 bla bla bla?",
+            "answer1": ["science - q61","0"],
+            "answer2": ["science - q62","1"],
+            "answer3": ["science - q63","0"]
+        }
+    ]
+}

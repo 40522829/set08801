@@ -1,0 +1,110 @@
+{
+    "category1": {
+        "q1": {
+        "question": "q1 bla bla bla?",
+        "answers": [
+            "cat1 - q11",
+            "cat1 - q12",
+            "cat1 - q13"
+        ]},
+        "q2": {
+            "question": "q2 bla bla bla?",
+            "answers": [
+            "cat1 - q21",
+            "cat1 - q22",
+            "cat1 - q23"
+        ]},
+        "q3": {
+            "question": "q3 bla bla bla?",
+            "answers": [
+            "cat1 - q31",
+            "cat1 - q32",
+            "cat1 - q33"
+        ]},
+        "q4": {
+            "question": "q4 bla bla bla?",
+            "answers": [
+            "cat1 - q41",
+            "cat1 - q42",
+            "cat1 - q43"
+        ]},
+        "q5": {
+            "question": "q5 bla bla bla?",
+            "answers": [
+            "cat1 - q51",
+            "cat1 - q52",
+            "cat1 - q53"
+        ]},
+        "q6": {
+            "question": "q6 bla bla bla?",
+            "answers": [
+            "cat1 - q61",
+            "cat1 - q62",
+            "cat1 - q63"
+        ]
+    },
+    "category2": {
+        "q1": [
+            "cat2 - q11",
+            "cat2 - q12",
+            "cat2 - q13"
+        ],
+        "q2": [
+            "cat2 - q21",
+            "cat2 - q22",
+            "cat2 - q23"
+        ],
+        "q3": [
+            "cat2 - q31",
+            "cat2 - q32",
+            "cat2 - q33"
+        ],
+        "q4": [
+            "cat2 - q41",
+            "cat2 - q42",
+            "cat2 - q43"
+        ],
+        "q5": [
+            "cat2 - q51",
+            "cat2 - q52",
+            "cat2 - q53"
+        ],
+        "q6": [
+            "cat2 - q61",
+            "cat2 - q62",
+            "cat2 - q63"
+        ]
+    },
+    "category3": {
+        "q1": [
+            "cat3 - q11",
+            "cat3 - q12",
+            "cat3 - q13"
+        ],
+        "q2": [
+            "cat3 - q21",
+            "cat3 - q22",
+            "cat3 - q23"
+        ],
+        "q3": [
+            "cat3 - q31",
+            "cat3 - q32",
+            "cat3 - q33"
+        ],
+        "q4": [
+            "cat3 - q41",
+            "cat3 - q42",
+            "cat3 - q43"
+        ],
+        "q5": [
+            "cat3 - q51",
+            "cat3 - q52",
+            "cat3 - q53"
+        ],
+        "q6": [
+            "cat3 - q61",
+            "cat3 - q62",
+            "cat3 - q63"
+        ]
+    }
+}

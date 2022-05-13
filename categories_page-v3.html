@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Inquizitevely!</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/categories3.css">
+    </head>
+    <body>    
+        <h2 class="h2">Choose 2 categories</h2>
+        <div class="row">
+            <div class="column container">
+                <img src="./graphics/british_tv.jpg" alt="British TV category" style="width:100%">
+                <div class="overlay">
+                    <a href="#" id="britishTV" class="icon" title="British TV" onclick="selectCategory('British TV')">
+                        <i class="fa-solid fa-tv"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="column container">
+                <img src="./graphics/geography.jpg" alt="Geography category" style="width:100%">
+                <div class="overlay">
+                    <a href="#" id="geography" class="icon" title="Geography" onclick="selectCategory('Geography')">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="column container">
+                <img src="./graphics/history.jpg" alt="History category" style="width:100%">
+                <div class="overlay">
+                    <a href="#" id="history" class="icon" title="History" onclick="selectCategory('History')">
+                        <i class="fa-solid fa-book-atlas"></i>
+                    </a>
+                </div>
+            </div>
+        </div>        
+        <div class="row">
+            <div class="column container">
+                <img src="./graphics/science.jpg" alt="Science" style="width:100%">
+                <div class="overlay">
+                    <a href="#" id="science" class="icon" title="Science" onclick="selectCategory('Science')">
+                        <i class="fa-solid fa-flask"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="column container">
+                <img src="./graphics/sports.jpg" alt="Sports" style="width:100%">
+                <div class="overlay">
+                    <a href="#" id="sports" class="icon" title="Sports" onclick="selectCategory('Sports')">
+                        <i class="fa-solid fa-basketball"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="column container">
+                <img src="./graphics/technology.jpg" alt="Technology" style="width:100%">
+                <div class="overlay">
+                    <a href="#" id="technology" class="icon" title="Technology" onclick="selectCategory('Technology')">
+                        <i class="fa-solid fa-desktop"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h3 class="column chosen_categories">Chosen categories :</h3>
+            <button id="category1" class="categories">Empty</button>
+            <button id="category2" class="categories">Empty</button>
+        </div>
+        <a id="playBtn" class="play_button" href="./accordion_questions-v3.html" onclick="checkCategories(event)">Let's play!</a>
+    </body>
+    <script src="./js/select_category.js"></script>
+</html>

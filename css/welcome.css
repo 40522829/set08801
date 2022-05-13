@@ -1,0 +1,66 @@
+
+/* Set a style for all buttons in the modal*/
+.modal_link {
+background-color: #4CAF50;
+color: white;
+font-size: 20px;    
+text-decoration: none;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+opacity: 0.9;
+}
+
+/* Add padding and center-align text to the container */
+.modal_container {
+padding: 16px;
+text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+padding-top: 50px;
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal_content {
+background-color: #e7ecf0;
+margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid #888;
+width: 30%; /* Could be more or less, depending on screen size */
+text-align: center;
+height: 18%;
+}
+
+/* The Modal Close Button (x) */
+.close {
+position: absolute;
+right: 35px;
+top: 15px;
+font-size: 40px;
+font-weight: bold;
+color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+color: #f44336;
+cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}

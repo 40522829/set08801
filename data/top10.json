@@ -1,0 +1,70 @@
+{
+    "top10": [
+        {
+            "player": "John",
+            "points": "30",
+            "date": "2022-01-15",
+            "time": "08:42"
+        },
+        {
+            "player": "Rebecca",
+            "points": "06",
+            "date": "2022-01-19",
+            "time": "09:29"
+        },
+        {
+            "player": "Trae",
+            "points": "24",
+            "date": "2022-02-23",
+            "time": "18:26"
+        },
+        {
+            "player": "Yuri",
+            "points": "36",
+            "date": "2022-03-04",
+            "time": "19:34"
+        },
+        {
+            "player": "Sam",
+            "points": "12",
+            "date": "2022-04-04",
+            "time": "10:56"
+        },
+        {
+            "player": "Sam",
+            "points": "19",
+            "date": "2022-05-05",
+            "time": "16:44"
+        },
+        {
+            "player": "Michelle",
+            "points": "30",
+            "date": "2022-04-26",
+            "time": "18:16"
+        },
+        {
+            "player": "Susan",
+            "points": "24",
+            "date": "2022-03-14",
+            "time": "21:34"
+        },
+        {
+            "player": "Chloe",
+            "points": "12",
+            "date": "2022-05-04",
+            "time": "18:51"
+        },
+        {
+            "player": "Hunter",
+            "points": "14",
+            "date": "2022-05-07",
+            "time": "16:47"
+        },
+        {
+            "player": "Sam",
+            "points": "12",
+            "date": "2022-05-04",
+            "time": "13:56"
+        }
+    ]
+}
